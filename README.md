@@ -31,7 +31,7 @@ To download the required resources, run:
 
 ```bash
 python scripts/download_resources.py
-
+```
 The default scripts' arguments assume that all the required data is put into `data` dir in the project root directory.
 
 ### 🧰 Install Dependencies

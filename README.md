@@ -6,7 +6,8 @@ Authors: *Xi Xuan*, *Yang Xiao*, *Rohan Kumar Das*, *Tomi Kinnunen*
 
 
 
-# Cite
+# ✍️ Citation
+If you find our work helpful, please use the following citations.
 ```  
 @misc{xuan2025multilingualsourcetracingspeech,
       title={Multilingual Source Tracing of Speech Deepfakes: A First Benchmark}, 

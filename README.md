@@ -7,19 +7,13 @@
 
 Official PyTorch Implementation: Multilingual Source Tracing of Speech Deepfakes: A First Benchmark 🕵️‍♂️🔍
 
-Authors: *Xi Xuan*, *Yang Xiao*, *Rohan Kumar Das*, *Tomi Kinnunen*
+Authors: Xi Xuan, Yang Xiao, Rohan Kumar Das, Tomi Kinnunen
 
 ---
 
-## 📌 Introduction
+## 📌 Abstract
 
-We present the **first multilingual benchmark** for **Source Tracing (ST) of speech deepfakes**, a task in identifying the origin of synthetic speech across diverse languages 🌍🗣️.
-
-This work introduces a comprehensive evaluation framework that covers both **mono-lingual** and **cross-lingual** scenarios, enabling robust analysis of deepfake attribution in real-world, multilingual settings. 🔍
-
-Furthermore, it is the **first study** to investigate the impact of **unseen languages** and **unseen speakers** on source tracing performance, paving the way for more generalizable and realistic deepfake detection systems 🚀.
-
-Our benchmark is built on the MLAAD dataset and our work offers the first systematic evaluation of multilingual ST and lays a foundation for future research in this area. 
+Recent progress in generative AI has made it increasingly easy to create natural-sounding deepfake speech from just a few seconds of audio. While these tools support helpful applications, they also raise serious concerns by making it possible to generate convincing fake speech in many languages. Current research has largely focused on detecting fake speech, but little attention has been given to tracing the source models used to generate it. This paper introduces the first benchmark for multilingual speech deepfake source tracing, covering both mono- and crosslingual scenarios. We comparatively investigate DSP- and SSLbased modeling; examine how SSL representations fine-tuned on different languages impact cross-lingual generalization performance; and evaluate generalization to unseen languages and speakers. Our findings offer the first comprehensive insights into the challenges of identifying speech generation models when training and inference languages differ. 
 
 ## 🚀 Getting Started
 
@@ -33,6 +27,9 @@ To download the required resources, run:
 python scripts/download_resources.py
 ```
 The default scripts' arguments assume that all the required data is put into `data` dir in the project root directory.
+
+### Protocols
+
 
 ### 🧰 Install Dependencies
 
@@ -49,35 +46,14 @@ For data augmentation, download the 🎵 [MUSAN](https://www.openslr.org/17/) da
 ### Step 1. Data augmentation and feature extraction
 
 The first step of the tool reads the MCL-MLAAD data, augments it with four noise types (noise, music, babble, and reverberation) and extracts
-the `wav2vec2-base` features needed to train the AASIST model.  Additional parameters can be set from the script,
+the DSP/SSL features needed to train the AASIST/ResNet/ECAPA-TDNN model.  Additional parameters can be set from the script,
 such as max length, model, etc. 
 
 ```bash
 python scripts/preprocess_dataset.py
 ```
 
-Output will be written to `exp/preprocess_wav2vec2-base/`. You can change the path in the script. 
-
-### Step 2. Train a AASIST model on top of the wav2vec2-base features
-
-Using the augmented features, we then train an AASIST model for 30 epochs. The model is able to classify the samples
-with respect to the source system. The class assignment will be written to `exp/label_assignment.txt`.
-
-```bash
-python train_refd.py
-```
-
-### Step 3. Get the classification metrics for the known (in-domain) classes
-
-Given the trained model stored in `exp/trained_models/`, we can now compute its accuracy over known classes (those
-seen during training time).
-
-```bash
-python scripts/get_classification_metrics.py
-```
-
-The script will limit the data in the `dev` and `eval` sets to the samples which are from the known systems 
-(i.e. those also present in the training data) and compute their classification metrics.
+Output will be written to `exp/preprocess_xxx-base/`. You can change the path in the script. 
 
 
 

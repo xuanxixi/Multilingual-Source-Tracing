@@ -30,9 +30,14 @@ The default scripts' arguments assume that all the required data is put into `da
 
 ### Protocols
 
+### DSP Models
+
+All DSP front-ends include LFCC, implemented using [<img src="https://pytorch.org/assets/images/torchaudio-logo.png" alt="torchaudio" width="16"/> torchaudio](https://docs.pytorch.org/audio/main/generated/torchaudio.transforms.LFCC.html)
+
+
 ### SSL Models
 
-All SSL models have 300M parameters. Base models include wav2vec2.0 Large LV-60 and XLS-R-300M. Language-specific fine-tuned variants are based on large-xlsr-53, trained on six languages (en, de, fr, it, pl, ru).  
+All SSL front-ends include two foundation models: wav2vec2.0 Large LV-60 and XLS-R-300M. Language-specific fine-tuned variants are based on large-xlsr-53, trained on six languages (en, de, fr, it, pl, ru).  
 
 | Name              | Pretraining Dur. (h) | Pretraining Langs. | Fine-tuning Lang. | Datasets        | Hugging Face Link |
 |-------------------|----------------------|--------------------|-------------------|-----------------|-------------------|
@@ -40,17 +45,17 @@ All SSL models have 300M parameters. Base models include wav2vec2.0 Large LV-60 
 | 1. large-lv60     | 53k                  | en                 | --                | LL              | [🤗](https://huggingface.co/facebook/wav2vec2-large-lv60) |
 | 2. xls-r-300m     | 436k                 | many               | --                | CV, BBL, MLS, VP, VL | [🤗](https://huggingface.co/facebook/wav2vec2-xls-r-300m) |
 | **Fine-tuned variants** |             |                    |                   |                 |                   |
-| 3. large-xlsr-53-en | 56k                | many               | en                | CV-en           | [🤗](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-en) |
-| 4. large-xlsr-53-de | 56k                | many               | de                | CV-de           | [🤗](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-de) |
-| 5. large-xlsr-53-fr | 56k                | many               | fr                | CV-fr           | [🤗](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-fr) |
-| 6. large-xlsr-53-it | 56k                | many               | it                | CV-it           | [🤗](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-it) |
-| 7. large-xlsr-53-pl | 56k                | many               | pl                | CV-pl           | [🤗](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-pl) |
-| 8. large-xlsr-53-ru | 56k                | many               | ru                | CV-ru           | [🤗](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-ru) |
+| 3. large-xlsr-53-en | 56k                | many               | en                | CV-en           | [🤗](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-english) |
+| 4. large-xlsr-53-de | 56k                | many               | de                | CV-de           | [🤗]([https://huggingface.co/facebook/wav2vec2-large-xlsr-53-de](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-german)) |
+| 5. large-xlsr-53-fr | 56k                | many               | fr                | CV-fr           | [🤗]([https://huggingface.co/facebook/wav2vec2-large-xlsr-53-fr](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-french)) |
+| 6. large-xlsr-53-it | 56k                | many               | it                | CV-it           | [🤗]([https://huggingface.co/facebook/wav2vec2-large-xlsr-53-it](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-italian)) |
+| 7. large-xlsr-53-pl | 56k                | many               | pl                | CV-pl           | [🤗](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-polish) |
+| 8. large-xlsr-53-ru | 56k                | many               | ru                | CV-ru           | [🤗]([https://huggingface.co/facebook/wav2vec2-large-xlsr-53-ru](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian)) |
 
 **Datasets Key**:  
-- Librispeech (LL) [¹](https://arxiv.org/abs/1512.02595)  
+- Librispeech (LL) [¹](https://ieeexplore.ieee.org/document/7178964)  
 - CommonVoice (CV) [²](https://arxiv.org/abs/1912.06670)  
-- BABEL (BBL) [³](https://ieeexplore.ieee.org/document/6855569)  
+- BABEL (BBL) [³](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=31a13cefb42647e924e0d2778d341decc44c40e9)  
 - Multilingual Librispeech (MLS) [⁴](https://arxiv.org/abs/2012.03411)  
 - VoxPopuli (VP) [⁵](https://arxiv.org/abs/2101.00390)  
 - VoxLingua107 (VL) [⁶](https://arxiv.org/abs/2011.12998)

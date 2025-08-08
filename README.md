@@ -37,15 +37,15 @@ All SSL models have 300M parameters. Base models include wav2vec2.0 Large LV-60 
 | Name              | Pretraining Dur. (h) | Pretraining Langs. | Fine-tuning Lang. | Datasets        | Hugging Face Link |
 |-------------------|----------------------|--------------------|-------------------|-----------------|-------------------|
 | **wav2vec2**      |                      |                    |                   |                 |                   |
-| 1. large-lv60     | 53k                  | en                 | --                | LL              | [🔗](https://huggingface.co/facebook/wav2vec2-large-lv60) |
-| 2. xls-r-300m     | 436k                 | many               | --                | CV, BBL, MLS, VP, VL | [🔗](https://huggingface.co/facebook/wav2vec2-xls-r-300m) |
+| 1. large-lv60     | 53k                  | en                 | --                | LL              | [🤗](https://huggingface.co/facebook/wav2vec2-large-lv60) |
+| 2. xls-r-300m     | 436k                 | many               | --                | CV, BBL, MLS, VP, VL | [🤗](https://huggingface.co/facebook/wav2vec2-xls-r-300m) |
 | **Fine-tuned variants** |             |                    |                   |                 |                   |
-| 3. large-xlsr-53-en | 56k                | many               | en                | CV-en           | [🔗](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-en) |
-| 4. large-xlsr-53-de | 56k                | many               | de                | CV-de           | [🔗](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-de) |
-| 5. large-xlsr-53-fr | 56k                | many               | fr                | CV-fr           | [🔗](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-fr) |
-| 6. large-xlsr-53-it | 56k                | many               | it                | CV-it           | [🔗](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-it) |
-| 7. large-xlsr-53-pl | 56k                | many               | pl                | CV-pl           | [🔗](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-pl) |
-| 8. large-xlsr-53-ru | 56k                | many               | ru                | CV-ru           | [🔗](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-ru) |
+| 3. large-xlsr-53-en | 56k                | many               | en                | CV-en           | [🤗](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-en) |
+| 4. large-xlsr-53-de | 56k                | many               | de                | CV-de           | [🤗](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-de) |
+| 5. large-xlsr-53-fr | 56k                | many               | fr                | CV-fr           | [🤗](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-fr) |
+| 6. large-xlsr-53-it | 56k                | many               | it                | CV-it           | [🤗](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-it) |
+| 7. large-xlsr-53-pl | 56k                | many               | pl                | CV-pl           | [🤗](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-pl) |
+| 8. large-xlsr-53-ru | 56k                | many               | ru                | CV-ru           | [🤗](https://huggingface.co/facebook/wav2vec2-large-xlsr-53-ru) |
 
 **Datasets Key**:  
 - Librispeech (LL) [¹](https://arxiv.org/abs/1512.02595)  

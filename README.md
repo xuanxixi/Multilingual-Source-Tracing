@@ -47,11 +47,11 @@ All SSL front-ends include two foundation models: wav2vec2.0 Large LV-60 and XLS
 | 2. xls-r-300m     | 436k                 | many               | --                | CV, BBL, MLS, VP, VL | [🤗](https://huggingface.co/facebook/wav2vec2-xls-r-300m) |
 | **Fine-tuned variants** |             |                    |                   |                 |                   |
 | 3. large-xlsr-53-en | 56k                | many               | en                | CV-en           | [🤗](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-english) |
-| 4. large-xlsr-53-de | 56k                | many               | de                | CV-de           | [🤗]([https://huggingface.co/facebook/wav2vec2-large-xlsr-53-de](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-german)) |
-| 5. large-xlsr-53-fr | 56k                | many               | fr                | CV-fr           | [🤗]([https://huggingface.co/facebook/wav2vec2-large-xlsr-53-fr](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-french)) |
-| 6. large-xlsr-53-it | 56k                | many               | it                | CV-it           | [🤗]([https://huggingface.co/facebook/wav2vec2-large-xlsr-53-it](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-italian)) |
+| 4. large-xlsr-53-de | 56k                | many               | de                | CV-de           | [🤗](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-german) |
+| 5. large-xlsr-53-fr | 56k                | many               | fr                | CV-fr           | [🤗](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-french) |
+| 6. large-xlsr-53-it | 56k                | many               | it                | CV-it           | [🤗](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-italian) |
 | 7. large-xlsr-53-pl | 56k                | many               | pl                | CV-pl           | [🤗](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-polish) |
-| 8. large-xlsr-53-ru | 56k                | many               | ru                | CV-ru           | [🤗]([https://huggingface.co/facebook/wav2vec2-large-xlsr-53-ru](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian)) |
+| 8. large-xlsr-53-ru | 56k                | many               | ru                | CV-ru           | [🤗](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian) |
 
 **Datasets Key**:  
 - Librispeech (LL) [¹](https://ieeexplore.ieee.org/document/7178964)  

@@ -11,7 +11,7 @@ Our paper “Multilingual Source Tracing of Speech Deepfakes: A First Benchmark�
 
 🚀 **Exciting News!** Our paper **"Multilingual Source Tracing of Speech Deepfakes: A First Benchmark"** has been accepted for **Oral Presentation** at Interspeech SPSC 2025! 🎙️🔍
 
-** 📅 Presentation Details:**
+📅 Presentation Details:
 *   **🗓️ Date:** Saturday, August 16th, 2025
 *   **🕚 Time:** 11:15 – 12:15
 *   **📍 Location:** Aula Conference Center, TU Delft

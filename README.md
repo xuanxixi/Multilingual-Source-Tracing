@@ -14,6 +14,8 @@
 *   **🕚 Time:** 11:15 – 12:15
 *   **📍 Location:** Aula Conference Center, TU Delft
 
+---
+
 Official PyTorch Implementation: Multilingual Source Tracing of Speech Deepfakes: A First Benchmark 🕵️‍♂️🔍
 
 Authors: Xi Xuan, Yang Xiao, Rohan Kumar Das, Tomi Kinnunen

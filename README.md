@@ -6,13 +6,13 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
 
-(Accepted at Interspeech SPSC 2025 Oral🎙) 
+(Accepted at Interspeech SPSC 2025-Oral 🇳🇱🎙) 
 
 📅 Presentation Details:
 *   **🎙️ Speaker:** Xi Xuan
 *   **🗓️ Date:** Saturday, August 16th, 2025
 *   **🕚 Time:** 11:15 – 12:15
-*   **📍 Location:** Aula Conference Center, TU Delft
+*   **📍 Location:** Aula Conference Center, TU Delft, Netherlands 🇳🇱
 
 ---
 

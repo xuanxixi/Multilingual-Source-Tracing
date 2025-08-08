@@ -5,13 +5,11 @@
 ![Python 3.11](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-🚀 Excited to share our latest work accepted at Interspeech SPSC 2025 (Oral)! 🎙️🔍
 
-Our paper “Multilingual Source Tracing of Speech Deepfakes: A First Benchmark” addresses a gap in current research — while deepfake speech detection has made huge strides, identifying the source models behind such speech, especially across languages, remains largely unexplored.
-
-🚀 **Exciting News!** Our paper **"Multilingual Source Tracing of Speech Deepfakes: A First Benchmark"** has been accepted for **Oral Presentation** at Interspeech SPSC 2025! 🎙️🔍
+🚀 **Exciting News!** Accepted for **Oral Presentation** at Interspeech SPSC 2025! 🎙️🔍
 
 📅 Presentation Details:
+*   **🎙️ Speaker:** Xi Xuan
 *   **🗓️ Date:** Saturday, August 16th, 2025
 *   **🕚 Time:** 11:15 – 12:15
 *   **📍 Location:** Aula Conference Center, TU Delft

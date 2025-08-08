@@ -32,7 +32,8 @@ The default scripts' arguments assume that all the required data is put into `da
 
 ### DSP Models
 
-All DSP front-ends include LFCC, implemented using [<img src="https://pytorch.org/assets/images/torchaudio-logo.png" alt="torchaudio" width="16"/> torchaudio](https://docs.pytorch.org/audio/main/generated/torchaudio.transforms.LFCC.html)
+All DSP front-ends include LFCC, implemented using [![torchaudio LFCC](https://img.shields.io/badge/torchaudio-LFCC-blue?logo=pytorch)](https://docs.pytorch.org/audio/main/generated/torchaudio.transforms.LFCC.html).
+
 
 
 ### SSL Models

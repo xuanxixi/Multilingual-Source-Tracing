@@ -6,7 +6,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
 
-🚀 **Exciting News!** Accepted for **Oral Presentation** at Interspeech SPSC 2025! 🎙️🔍
+(Accepted at Interspeech SPSC 2025 Oral🎙) 
 
 📅 Presentation Details:
 *   **🎙️ Speaker:** Xi Xuan

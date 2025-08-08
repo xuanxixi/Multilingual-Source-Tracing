@@ -20,7 +20,6 @@ Official PyTorch Implementation: Multilingual Source Tracing of Speech Deepfakes
 
 Authors: Xi Xuan, Yang Xiao, Rohan Kumar Das, Tomi Kinnunen
 
----
 
 ## 📌 Abstract
 

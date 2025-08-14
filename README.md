@@ -8,6 +8,8 @@
 
 (Accepted at Interspeech SPSC 2025-Oral 🇳🇱🎙) 
 
+[![arXiv](https://img.shields.io/badge/arXiv-2508.09294v1-b31b1b.svg)](https://www.arxiv.org/abs/2508.04143)
+
 📅 Presentation Details:
 *   **🎙️ Speaker:** Xi Xuan
 *   **🗓️ Date:** Saturday, August 16th, 2025

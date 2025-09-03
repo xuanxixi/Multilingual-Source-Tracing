@@ -8,7 +8,7 @@
 
 (Accepted at Interspeech SPSC 2025-Oral 🇳🇱🎙) 
 
-[![arXiv](https://img.shields.io/badge/arXiv-2508.09294v1-b31b1b.svg)](https://www.arxiv.org/abs/2508.04143)
+[![arXiv](https://img.shields.io/badge/arXiv-2508.09294v1-b31b1b.svg)](https://www.arxiv.org/abs/2508.04143) [[slides](https://beaverton-my.sharepoint.com/personal/xixuan3_um_cityu_edu_hk/Documents/Interspeech25_SPSC_PPT_Xi_Xuan.pdf?CT=1756894314188&OR=ItemsView)]
 
 📅 Presentation Details:
 *   **🎙️ Speaker:** Xi Xuan

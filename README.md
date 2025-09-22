@@ -39,13 +39,12 @@ To download the required resources, run:
 python scripts/download_resources.py
 ```
 The default scripts' arguments assume that all the required data is put into `data` dir in the project root directory.
+---
 
 ### 📂 Protocol folders (mapping to paper Section 2.2)
 
 There are **three main protocol folders** under the Hugging Face dataset.  
 Each subsection in the paper maps to one of these folders:
-
----
 
 #### 🔹 2.2.1 Mono- & Cross-Lingual Protocol  
 #### 🔹 2.2.2 Mono- & Cross Language Family Protocol  
@@ -54,20 +53,16 @@ Each subsection in the paper maps to one of these folders:
 👉 Use files under **Languages Protocol**  
 <img src="https://huggingface.co/front/assets/huggingface_logo.svg" width="20"/> [Languages Protocol](https://huggingface.co/datasets/xxuan-speech/Multilingual_Source_Tracing_Protocals/tree/main/Languages%20Protocol)
 
----
-
 #### 🔹 2.2.4 Seen & Unseen Speakers Protocol  
 
 👉 Use files under **Seen & Unseen Speakers Eval Protocol**  
 <img src="https://huggingface.co/front/assets/huggingface_logo.svg" width="20"/> [Seen & Unseen Speakers Eval Protocol](https://huggingface.co/datasets/xxuan-speech/Multilingual_Source_Tracing_Protocals/tree/main/Seen%20%26%20Unseen%20Speakers%20Eval%20Protocol)
 
----
-
 #### 🔹 Complete Protocol with Pseudo-Speaker Labels  
 
 - Labels combine **language + speaker-id**.  
 - Generated via our **pseudo-speaker labeling method** (see script: [inference_extract_speaker_emb.py](https://github.com/xuanxixi/Tools/blob/main/inference_extract_speaker_emb.py))  
-- Embeddings are clustered using **spherical k-means** to obtain pseudo-speaker IDs.  
+- Embeddings are clustered using **spherical k-means** to obtain pseudo-speaker IDs. (see details in Section 2.2.4 of the paper)  
 - Data stored under **Languages+Speakers Protocol**  
 
 <img src="https://huggingface.co/front/assets/huggingface_logo.svg" width="20"/> [Languages+Speakers Protocol](https://huggingface.co/datasets/xxuan-speech/Multilingual_Source_Tracing_Protocals/tree/main/Languages%2BSpeakers%20Protocol)

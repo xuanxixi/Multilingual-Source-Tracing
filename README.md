@@ -40,24 +40,38 @@ python scripts/download_resources.py
 ```
 The default scripts' arguments assume that all the required data is put into `data` dir in the project root directory.
 
-### Protocol folders (mapping to paper Section 2.2)
+### 📂 Protocol folders (mapping to paper Section 2.2)
 
-**There are three folders under the Hugging Face dataset.**  
+There are **three main protocol folders** under the Hugging Face dataset.  
 Each subsection in the paper maps to one of these folders:
 
-- **2.2.1 Mono- & Cross-Lingual Protocol**  
-  **2.2.2 Mono- & Cross Language Family Protocol**  
-  **2.2.3 Seen & Unseen Languages Protocol**  
-  → use files under **Languages Protocol**  
-  🔗 [Languages Protocol](https://huggingface.co/datasets/xxuan-speech/Multilingual_Source_Tracing_Protocals/tree/main/Languages%20Protocol)
+---
 
-- **2.2.4 Seen & Unseen Speakers Protocol**  
-  → use files under **Seen & Unseen Speakers Eval Protocol**  
-  🔗 [Seen & Unseen Speakers Eval Protocol](https://huggingface.co/datasets/xxuan-speech/Multilingual_Source_Tracing_Protocals/tree/main/Seen%20%26%20Unseen%20Speakers%20Eval%20Protocol)
+#### 🔹 2.2.1 Mono- & Cross-Lingual Protocol  
+#### 🔹 2.2.2 Mono- & Cross Language Family Protocol  
+#### 🔹 2.2.3 Seen & Unseen Languages Protocol  
 
-- **Complete protocol with pseudo-speaker labels (language + speaker-id)**  
-  → generated via our pseudo-speaker labeling method; stored under **Languages+Speakers Protocol**  
-  🔗 [Languages+Speakers Protocol](https://huggingface.co/datasets/xxuan-speech/Multilingual_Source_Tracing_Protocals/tree/main/Languages%2BSpeakers%20Protocol)
+👉 Use files under **Languages Protocol**  
+<img src="https://huggingface.co/front/assets/huggingface_logo.svg" width="20"/> [Languages Protocol](https://huggingface.co/datasets/xxuan-speech/Multilingual_Source_Tracing_Protocals/tree/main/Languages%20Protocol)
+
+---
+
+#### 🔹 2.2.4 Seen & Unseen Speakers Protocol  
+
+👉 Use files under **Seen & Unseen Speakers Eval Protocol**  
+<img src="https://huggingface.co/front/assets/huggingface_logo.svg" width="20"/> [Seen & Unseen Speakers Eval Protocol](https://huggingface.co/datasets/xxuan-speech/Multilingual_Source_Tracing_Protocals/tree/main/Seen%20%26%20Unseen%20Speakers%20Eval%20Protocol)
+
+---
+
+#### 🔹 Complete Protocol with Pseudo-Speaker Labels  
+
+- Labels combine **language + speaker-id**.  
+- Generated via our **pseudo-speaker labeling method** (see script: [inference_extract_speaker_emb.py](https://github.com/xuanxixi/Tools/blob/main/inference_extract_speaker_emb.py))  
+- Embeddings are clustered using **spherical k-means** to obtain pseudo-speaker IDs.  
+- Data stored under **Languages+Speakers Protocol**  
+
+<img src="https://huggingface.co/front/assets/huggingface_logo.svg" width="20"/> [Languages+Speakers Protocol](https://huggingface.co/datasets/xxuan-speech/Multilingual_Source_Tracing_Protocals/tree/main/Languages%2BSpeakers%20Protocol)
+
 
 
 ### DSP Models

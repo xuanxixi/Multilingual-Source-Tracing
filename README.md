@@ -40,7 +40,25 @@ python scripts/download_resources.py
 ```
 The default scripts' arguments assume that all the required data is put into `data` dir in the project root directory.
 
-### Protocols
+### Protocol folders (mapping to paper Section 2.2)
+
+**There are three folders under the Hugging Face dataset.**  
+Each subsection in the paper maps to one of these folders:
+
+- **2.2.1 Mono- & Cross-Lingual Protocol**  
+  **2.2.2 Mono- & Cross Language Family Protocol**  
+  **2.2.3 Seen & Unseen Languages Protocol**  
+  → use files under **Languages Protocol**  
+  🔗 [Languages Protocol](https://huggingface.co/datasets/xxuan-speech/Multilingual_Source_Tracing_Protocals/tree/main/Languages%20Protocol)
+
+- **2.2.4 Seen & Unseen Speakers Protocol**  
+  → use files under **Seen & Unseen Speakers Eval Protocol**  
+  🔗 [Seen & Unseen Speakers Eval Protocol](https://huggingface.co/datasets/xxuan-speech/Multilingual_Source_Tracing_Protocals/tree/main/Seen%20%26%20Unseen%20Speakers%20Eval%20Protocol)
+
+- **Complete protocol with pseudo-speaker labels (language + speaker-id)**  
+  → generated via our pseudo-speaker labeling method; stored under **Languages+Speakers Protocol**  
+  🔗 [Languages+Speakers Protocol](https://huggingface.co/datasets/xxuan-speech/Multilingual_Source_Tracing_Protocals/tree/main/Languages%2BSpeakers%20Protocol)
+
 
 ### DSP Models
 

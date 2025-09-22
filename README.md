@@ -50,7 +50,7 @@ Following this paper’s protocol, each audio file is augmented with **musan+rir
 
 
 
-### 📂 2. Protocol folders (mapping to paper Section 2.2)
+### 📂 2. Download Protocols (mapping to paper Section 2.2)
 
 There are **three main protocol folders** under the Hugging Face dataset.  
 Each subsection in the paper maps to one of these folders:
@@ -77,12 +77,12 @@ Each subsection in the paper maps to one of these folders:
 <img src="https://huggingface.co/front/assets/huggingface_logo.svg" width="20"/> [Languages+Speakers Protocol](https://huggingface.co/datasets/xxuan-speech/Multilingual_Source_Tracing_Protocals/tree/main/Languages%2BSpeakers%20Protocol)
 
 
-### DSP Models
+### 3. DSP Models
 
 All DSP front-ends include LFCC, implemented using [![torchaudio LFCC](https://img.shields.io/badge/torchaudio-LFCC-blue?logo=pytorch)](https://docs.pytorch.org/audio/main/generated/torchaudio.transforms.LFCC.html).
 
 
-### SSL Models
+### 4. SSL Models
 
 All SSL front-ends include two foundation models: wav2vec2.0 Large LV-60 and XLS-R-300M. Language-specific fine-tuned variants are based on large-xlsr-53, trained on six languages (en, de, fr, it, pl, ru).  
 
@@ -108,14 +108,19 @@ All SSL front-ends include two foundation models: wav2vec2.0 Large LV-60 and XLS
 - VoxLingua107 (VL) [⁶](https://arxiv.org/abs/2011.12998)
 
 
-### 🧰 Install Dependencies
+### 🧰 5. Install Dependencies
 
 Install all required dependencies from the `requirements.txt` file. The baseline was developed and tested using Python 3.11.
 
 ```bash
 pip install -r requirements.txt
 ```
+### 6. Training
 
+### 7. Inference
+
+### 8. Results
+![Language-family results](results/Language_Family/language-family.png)
 
 # ✍️ Citation
 If you find our work helpful, please use the following citations.

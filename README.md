@@ -29,19 +29,28 @@ Recent progress in generative AI has made it increasingly easy to create natural
 
 ## 🚀 Getting Started
 
-### 📥 Download Dataset
+### 📥 1. Download MCL-MLAAD Dataset
 
-The baseline is based on the [MLAAD (Source Tracing Protocols) dataset](https://deepfake-total.com/sourcetracing).
+MCL-MLAAD is based on the [MLAAD dataset](https://deepfake-total.com/sourcetracing).  
+It includes **six languages** from three language families:  
 
-To download the required resources, run:
+- **Germanic**: English 🇬🇧, German 🇩🇪  
+- **Romance**: French 🇫🇷, Italian 🇮🇹  
+- **Slavic**: Polish 🇵🇱, Russian 🇷🇺  
 
-```bash
-python scripts/download_resources.py
-```
-The default scripts' arguments assume that all the required data is put into `data` dir in the project root directory.
----
+This dataset is designed for **Multilingual Source Tracing**, covering both **mono-lingual** and **cross-lingual** scenarios, and further explores the impact of **unseen languages** and **speakers**.
 
-### 📂 Protocol folders (mapping to paper Section 2.2)
+Following this paper’s protocol, each audio file is augmented with **musan+rirs** (four noise types: noise, music, babble, reverberation) and used to extract DSP/SSL features for training **AASIST / ResNet / ECAPA-TDNN**.
+
+- **MCL-MLAAD (LFCC+4noise)** → preprocessed `.pt` files for LFCC + AASIST / ResNet / ECAPA-TDNN  
+  🔗 [http:// (LFCC_add_noise/preprocess_lfcc folder)]
+
+- **MCL-MLAAD (no feature+4noise)** → preprocessed `.pt` files for different SSL + AASIST  
+  🔗 [http:// (Clean_no_feature folder)]
+
+
+
+### 📂 2. Protocol folders (mapping to paper Section 2.2)
 
 There are **three main protocol folders** under the Hugging Face dataset.  
 Each subsection in the paper maps to one of these folders:
@@ -68,11 +77,9 @@ Each subsection in the paper maps to one of these folders:
 <img src="https://huggingface.co/front/assets/huggingface_logo.svg" width="20"/> [Languages+Speakers Protocol](https://huggingface.co/datasets/xxuan-speech/Multilingual_Source_Tracing_Protocals/tree/main/Languages%2BSpeakers%20Protocol)
 
 
-
 ### DSP Models
 
 All DSP front-ends include LFCC, implemented using [![torchaudio LFCC](https://img.shields.io/badge/torchaudio-LFCC-blue?logo=pytorch)](https://docs.pytorch.org/audio/main/generated/torchaudio.transforms.LFCC.html).
-
 
 
 ### SSL Models
@@ -95,7 +102,7 @@ All SSL front-ends include two foundation models: wav2vec2.0 Large LV-60 and XLS
 **Datasets Key**:  
 - Librispeech (LL) [¹](https://ieeexplore.ieee.org/document/7178964)  
 - CommonVoice (CV) [²](https://arxiv.org/abs/1912.06670)  
-- BABEL (BBL) [³](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=31a13cefb42647e924e0d2778d341decc44c40e9)  
+- BABEL (BBL) [³](https://www.isca-archive.org/sltu_2014/gales14_sltu.pdf)  
 - Multilingual Librispeech (MLS) [⁴](https://arxiv.org/abs/2012.03411)  
 - VoxPopuli (VP) [⁵](https://arxiv.org/abs/2101.00390)  
 - VoxLingua107 (VL) [⁶](https://arxiv.org/abs/2011.12998)
@@ -108,23 +115,6 @@ Install all required dependencies from the `requirements.txt` file. The baseline
 ```bash
 pip install -r requirements.txt
 ```
-
-### 📂 Data augmentation and feature extraction
-
-For data augmentation, download the 🎵 [MUSAN](https://www.openslr.org/17/) dataset, which provides four noise types (noise, music, babble, and reverberation). Each clean utterance is augmented to create five variants (original + 4 perturbed), enhancing model robustness in diverse acoustic environments.
-
-### Step 1. Data augmentation and feature extraction
-
-The first step of the tool reads the MCL-MLAAD data, augments it with four noise types (noise, music, babble, and reverberation) and extracts
-the DSP/SSL features needed to train the AASIST/ResNet/ECAPA-TDNN model.  Additional parameters can be set from the script,
-such as max length, model, etc. 
-
-```bash
-python scripts/preprocess_dataset.py
-```
-
-Output will be written to `exp/preprocess_xxx-base/`. You can change the path in the script. 
-
 
 
 # ✍️ Citation

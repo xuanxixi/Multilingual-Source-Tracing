@@ -122,6 +122,7 @@ Run:
 
 ```bash
 python main_train.py
+```
 
 #### Figure 4 — Language-Family Experiments
 
@@ -129,6 +130,7 @@ Run:
 
 ```bash
 python family_train.py
+```
 
 #### Tables 5 & 6 — Leave-One-Language-Out (LOLO) Experiments
 
@@ -136,6 +138,7 @@ Run:
 
 ```bash
 python 5language_train.py
+```
 
 
 ### 7. Inference

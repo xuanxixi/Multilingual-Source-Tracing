@@ -32,6 +32,7 @@ Recent progress in generative AI has made it increasingly easy to create natural
 ### 📥 1. Download MCL-MLAAD Dataset
 
 MCL-MLAAD is based on the [MLAAD dataset](https://deepfake-total.com/sourcetracing).  
+MCL-MLAAD is available at [MCL-MLAAD dataset](https://huggingface.co/datasets/xxuan-speech/MCL-MLAAD).
 It includes **six languages** from three language families:  
 
 - **Germanic**: English 🇬🇧, German 🇩🇪  
@@ -42,11 +43,9 @@ This dataset is designed for **Multilingual Source Tracing**, covering both **mo
 
 Following this paper’s protocol, each audio file is augmented with **musan+rirs** (four noise types: noise, music, babble, reverberation) and used to extract DSP/SSL features for training **AASIST / ResNet / ECAPA-TDNN**.
 
-- **MCL-MLAAD (LFCC+4noise)** → preprocessed `.pt` files for LFCC + AASIST / ResNet / ECAPA-TDNN  
-  🔗 [http:// (LFCC_add_noise/preprocess_lfcc folder)]
+- **MCL-MLAAD (LFCC+4noise)** → preprocessed `.pt` files for LFCC + AASIST / ResNet / ECAPA-TDNN (LFCC_add_noise/preprocess_lfcc folder)
 
-- **MCL-MLAAD (no feature+4noise)** → preprocessed `.pt` files for different SSL + AASIST  
-  🔗 [http:// (Clean_no_feature folder)]
+- **MCL-MLAAD (no feature+4noise)** → preprocessed `.pt` files for different SSL + AASIST  (Clean_no_feature folder)
 
 
 
@@ -116,6 +115,28 @@ Install all required dependencies from the `requirements.txt` file. The baseline
 pip install -r requirements.txt
 ```
 ### 6. Training
+
+#### Table 4 — Main Experiments
+
+Run:
+
+```bash
+python main_train.py
+
+#### Figure 4 — Language-Family Experiments
+
+Run:
+
+```bash
+python family_train.py
+
+#### Tables 5 & 6 — Leave-One-Language-Out (LOLO) Experiments
+
+Run:
+
+```bash
+python 5language_train.py
+
 
 ### 7. Inference
 

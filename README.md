@@ -147,7 +147,7 @@ python 5language_train.py
 #### Table 4 — Main Experiments
 Run:
 ```bash
-python test per_language.py
+python test_per_language.py
 ```
 #### Figure 4 — Language-Family Experiments
 Run:

@@ -147,25 +147,25 @@ python 5language_train.py
 #### Table 4 — Main Experiments
 Run:
 ```bash
-test per language.py
+python test per_language.py
 ```
 #### Figure 4 — Language-Family Experiments
 Run:
 ```bash
-test family.py
+python test_family.py
 ```
 
 #### Tables 5 — Leave-One-Language-Out Experiment
 Run:
 ```bash
-test seen 5lang.py
+python test_seen_5lang.py
 ```
 
 #### Tables 6 — Leave-One-Language-Out Experiment
 
 Run:
 ```bash
-test lang seen unseen_speaker.py
+python test_lang_seen_unseen_speaker.py
 ```
 
 ### 8. Results

@@ -141,7 +141,32 @@ python 5language_train.py
 ```
 
 
-### 7. Inference
+### 7. Test
+
+
+#### Table 4 — Main Experiments
+Run:
+```bash
+test per language.py
+```
+#### Figure 4 — Language-Family Experiments
+Run:
+```bash
+test family.py
+```
+
+#### Tables 5 — Leave-One-Language-Out Experiment
+Run:
+```bash
+test seen 5lang.py
+```
+
+#### Tables 6 — Leave-One-Language-Out Experiment
+
+Run:
+```bash
+test lang seen unseen_speaker.py
+```
 
 ### 8. Results
 ![Language-family results](results/Language_Family/language-family.png)

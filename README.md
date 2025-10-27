@@ -171,6 +171,8 @@ python test_lang_seen_unseen_speaker.py
 ### 8. Results
 ![Language-family results](results/Language_Family/language-family.png)
 
+For more results, please refer to the paper.
+
 # ✍️ Citation
 If you find our work helpful, please use the following citations.
 ```  

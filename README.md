@@ -8,7 +8,7 @@
 
 (Accepted at Interspeech SPSC 2025-Oral 🇳🇱🎙) 
 
-[![arXiv](https://img.shields.io/badge/arXiv-2508.09294v1-b31b1b.svg)](https://www.arxiv.org/abs/2508.04143) [![Slides](https://img.shields.io/badge/Slides-ASRU%202025-1e3a8a.svg)](https://drive.google.com/file/d/1d5QUL5CgBHhJUY1r609r1vVLaiL13aOJ/view?usp=sharing)
+[![arXiv](https://img.shields.io/badge/arXiv-2508.09294v1-b31b1b.svg)](https://www.arxiv.org/abs/2508.04143) [![Slides](https://img.shields.io/badge/Slides-Interspeech%202025-1e3a8a.svg)](https://drive.google.com/file/d/1d5QUL5CgBHhJUY1r609r1vVLaiL13aOJ/view?usp=sharing)
 
 📅 Presentation Details:
 *   **🎙️ Speaker:** Xi Xuan
